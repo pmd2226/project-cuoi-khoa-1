@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(240, 246, 255);
+    height: 1160px;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 90px;
+    left: -5px;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    float: left;
+    width: 400px;
+    height: 69px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color:  #0B3051;
+    display: flex;
+}
+
+.logo img {
+    padding-top: 12px;
+    padding-left: 24px;
+    margin-right: 8px;
+    align-items: center;
+}
+
+.logo .text {
+    margin-top: 22px;
+    margin-left: 8px;
+}
+
+.header-right {
+    float: right;
+    display: flex;
+}
+
+.search-container {
+    width: 417px;
+    height: 44px;
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #9A93B3;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
+
+.user-info {
+    margin-top: 18px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info .avatar {
+    width: 50px;
+    height: 49px;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.location {
+    font-size: 14px;
+    color: gray;
+}
+
+.header-notification-icon {
+    margin-top: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    margin-top: 91px;
+    width: 314px;
+    height: 100%;
+    background-color: white;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar .icon {
+    width: 24.39px;
+    height: 24.39px;
+}
+
+.active {
+    background-color:rgba(240, 246, 255) ;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 269px;
+    height: 43.91px;
+    border-radius: 3.66px;
+}
+
+.menu img {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.heading {
+    margin-left: 100px;
+    margin-top: 40px;
+    justify-content: space-between;
+    position: absolute;
+    width: 1470px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-search-container {
+    width: 417px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #9A93B3;
+    background-color:rgba(240, 246, 255);
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.content-search-container input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
+
+.heading p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.grid {
+    margin-top: 120px;
+    margin-left: 100px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 380px 380px;
+}
+
+.box {
+    padding: 10px;
+    width: 466px;
+    height: 305px;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    background: #e6f8ed;
+    color: #1a7f37;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+.deadline {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    margin-top: 850px;
+    margin-left: 600px;
+}
+
+.pages a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #333;
+    background: #e0e0e0;
+}
+
+.pages a:hover {
+    background: #ccc;
+}
+
+.pages a.active {
+    background: #0a3d91;
+    color: #fff;
+    font-weight: bold;
+}
+
+.pages a.disabled {
+    background: transparent;
+    color: #999;
+    pointer-events: none;
+}
+
+li a {
+    text-decoration: none;
+    color: gray;
+}

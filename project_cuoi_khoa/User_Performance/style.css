@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(240, 246, 255);
+    height: 1160px;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 90px;
+    left: -5px;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    float: left;
+    width: 400px;
+    height: 69px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color:  #0B3051;
+    display: flex;
+}
+
+.logo img {
+    padding-top: 12px;
+    padding-left: 24px;
+    margin-right: 8px;
+    align-items: center;
+}
+
+.logo .text {
+    margin-top: 22px;
+    margin-left: 8px;
+}
+
+.header-right {
+    float: right;
+    display: flex;
+}
+
+.search-container {
+    width: 417px;
+    height: 44px;
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #9A93B3;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
+
+.user-info {
+    margin-top: 18px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info .avatar {
+    width: 50px;
+    height: 49px;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.location {
+    font-size: 14px;
+    color: gray;
+}
+
+.header-notification-icon {
+    margin-top: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    margin-top: 91px;
+    width: 314px;
+    height: 100%;
+    background-color: white;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar .icon {
+    width: 24.39px;
+    height: 24.39px;
+}
+
+.active {
+    background-color:rgba(240, 246, 255) ;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 269px;
+    height: 43.91px;
+    border-radius: 3.66px;
+}
+
+.menu img {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.container {
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.card-1 {
+    margin-left: 325px;
+    height: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    padding-left: 50px;
+}
+
+.card-1 img {
+    width: 759px;
+    height: 514px;
+}
+
+.card-1 h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #223355;
+}
+
+.card-2 {
+    width: 660px;
+    height: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card-2 h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #223355;
+}
+
+
+
+.dropdown {
+    font-size: 15px;
+    background: #238899;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+}
+
+.task {
+    display: flex;
+    width: 1455px;
+    height: 101px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-top: 40px;
+    margin-left: 400px;
+}
+
+.task-info {
+    flex: 1;
+}
+
+.task-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-sub {
+    font-size: 12px;
+    color: #666;
+}
+
+.task-btn {
+    background: #e6f8ed;
+    color: #28a745;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+    border: none;
+}
+
+.task-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.task-right {
+    display: flex;
+    align-items: center;
+}
+
+.pages {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pages span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pages .active {
+    background: #223355;
+    color: white;
+}
+
+li a {
+    text-decoration: none;
+    color: gray;
+}
