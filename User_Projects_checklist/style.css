@@ -316,4 +316,10 @@ body {
     height: 18px;
     accent-color: #4CAF50;
     cursor: pointer;
+
+}
+
+li a {
+    text-decoration: none;
+    color: gray;
 }
